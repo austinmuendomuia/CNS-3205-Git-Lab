@@ -1,0 +1,18 @@
+name: Lab Workflow Demo
+on:
+  push:
+    branches:
+      - main
+jobs:
+  explore-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        
+      - name: Run Creative Script
+        run: |
+          echo "Superman!!!"
+          echo "Hello from Group 3's Automated Workflow!"
+          echo "YAML scripts allow us to build CI/CD pipelines easily."
+          echo "This executed automatically because we pushed to main."
